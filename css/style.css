@@ -405,14 +405,7 @@ tr:nth-child(even)
 {
     width: 100%;
 }
-    .table{
-        width: 400px;
-        font-size: 0.90em;
-        overflow: scroll;
-        margin:0;
-        margin-left:5%;
-    }
-    
+   
     .showcase-block{
     height: 60vh;
     position: relative;
