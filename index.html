@@ -31,6 +31,7 @@
             </div>
             <div class="showcase-content">
                 <h1>See What's Next</h1>
+
                 <h3>Watch Anywhere. Cancel Anytime</h3>
                 <button class="btn">Watch Free for 30 Days</button>
             </div>
@@ -38,19 +39,133 @@
         <!-- showcase block ends here -->
         <!-- tabs block starts from here -->
         <div class="tab-block">
-            <div class="tab">
+            <div class="tab" onclick="show(this)" id="door">
                 <i class="fas fa-door-open fa-6x"></i>
             </div>
-            <div class="tab">
+            <div class="tab" onclick="show(this)" id="tablet">
                 <i class="fas fa-tablet-alt fa-6x"></i>
             </div>
-            <div class="tab">
+            <div class="tab" id="price" onclick="show(this)">
                 <i class="fas fa-tags fa-6x"></i>
             </div>
         </div>
         <!-- tabs block ends here -->
+        <!-- container for different tags descriptions -->
+        <div class="container">
+            <!-- door description box -->
+            <div class="door-description" id="door-description" style="display:none;">
+                <div>
+                    <p>
+                        If you decide Netflix isn't for you - no problem. No commitment. Cancel online anytime.
+                    </p>
+                    <button class="btn">Watch Free For 30 Days</button>
+                </div>
+                <div>
+                    <img src="./img/tab-content-1.png" alt="cancel-anytime">
+                </div>
+            </div>
+            <!-- door description container ends here -->
+            <div class="tablet-description" id="tablet-description" style="display:none;">
+                <div>
+                    <img src="./img/img1.png" alt="img1">
+                    <h3>Watch on your TV</h3>
+                    <p>
+                        Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+                    </p>
+                </div>
+                <div>
+                    <img src="./img/img2.png" alt="img2">
+                    <h3>Watch instantly or download for later</h3>
+                    <p>
+                        Available on phone and tablet, wherever you go.
+                    </p>
+                </div>
+                <div>
+                    <img src="./img/img3.png" alt="img3">
+                    <h3>Watch on computer</h3>
+                    <p>
+                        Watch right on Netflix.com.
+                    </p>
+                </div>
+            </div>
+            <!-- tablet description box ends up here -->
+            <div class="price-description" id="price-description" style="display:none;">
+                <div>
+                    <p>
+                        If you decide Netflix isn't for you - no problem. No commitment. Cancel online anytime.
+                    </p>
+                    <button class="btn">Watch Free For 30 Days</button>
+                </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Basic</th>
+                                <th>Standard</th>
+                                <th>Premium</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monthly price after free month ends on 6/19/19</td>
+                                <td>$8.99</td>
+                                <td>$12.99</td>
+                                <td>$15.99</td>
+                            </tr>
+                            <tr>
+                                <td>HD Available</td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Ultra HD Available</td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Screens you can watch on at the same time</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Watch on your laptop, TV, phone and tablet</td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Unlimited movies and TV shows</td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Cancel anytime</td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>First month free</td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                
+                    
+            </div>
+            <!-- price description box ends up here -->
+        </div>
+        <!-- container endsup here -->
     </div>
     <!-- Wrapper classs is closed  -->
 </body>
 
 </html>
+<script src="./js/main.js"></script>

@@ -9,7 +9,18 @@
 body{
     font-family: sans-serif,Arial, Helvetica, sans-serif;
     margin:0;
-    padding:0;
+    padding-bottom:30px;
+    background-color: black;
+}
+p{
+    color:white;
+}
+.show-border{
+    border-bottom:3px solid rgb(214, 16, 16);
+    color:white;
+}
+.remove-border{
+    border-bottom: none;
 }
 .wrapper{
     margin:0;
@@ -137,6 +148,92 @@ h1,h2,h3,h4 {
 .tab>i:hover{
     color:white;
 }
+
+.container{
+   margin:0;
+}
+.door-description::after,
+.container::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.container>.door-description>div:nth-child(1)
+{
+    color:white;
+    margin-top:12%;
+    margin-left: 5%;
+    width:40%;
+    float:left;
+    text-align:center;
+}
+
+.container>.door-description>div>p
+{
+    font-size:25px;
+    font-weight: 40;
+}
+.container>.door-description>div:nth-child(1) button{
+    font-size:20px;
+    margin-top:10px;
+}
+.container>.door-description>div:nth-child(2) img
+{
+    width: 100%;
+}
+.container>.door-description>:nth-child(2)
+{
+    float:right;
+    width: 40%;
+}
+.tablet-description::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+.tablet-description>div{
+    width: 30%;
+    margin-left:3%;
+    line-height: 30px;
+    align-content: center;
+    text-align: center;
+    float: left;
+}
+.tablet-description>div>img{
+    width: 80%;
+}
+.price-description>div:nth-child(1){
+    font-size:150%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.price-description>div:nth-child(1) button{
+    font-size:0.95em;
+    margin-top: 20px;
+}
+.table{
+    margin:auto;
+    border-collapse: collapse;
+    color:white;
+    border:none;
+    font-size:18px;
+}
+th{
+    padding: 1em;
+    border:none;
+}
+td{
+  padding:15px;
+    outline:none;
+    border:none;
+    margin:0;
+}
+tr:nth-child(even)
+{
+    background-color: grey;
+    outline:none;
+}
 @media screen and (max-width:936px)
 {
     .showcase-block{
@@ -222,8 +319,7 @@ h1,h2,h3,h4 {
     
 }
 .tab{
-    
-    margin-left:50px;
+    margin-left:8%;
     padding:10px;
     width: 20%;
     float:left;
@@ -233,6 +329,7 @@ h1,h2,h3,h4 {
 .tab:hover{
     border-bottom: 3px solid rgb(214, 16, 16);
 }
+    
 .tab>i{
     font-size: 90px;
     color:rgb(77, 75, 75);
@@ -240,10 +337,80 @@ h1,h2,h3,h4 {
 .tab>i:hover{
     color:white;
 }
+    .price-description>div:nth-child(1)
+    {
+        font-size: 1.3em;
+    }
+    .price-description>div:nth-child(1) button{
+        width: 13em;
+        font-size: 0.90em;
+    }
+    .door-description>div:nth-child(1) p
+    {
+        font-size:1.2em;
+    }
+    .tablet-description>div{
+        font-size:0.90em;
+        width: 28%;
+    }
 }
+/* Media QUERIES STARTS HERE */
+
+/* Media QUERIES STARTS HERE */
+
+/* Media QUERIES STARTS HERE */
+
+/* Media QUERIES STARTS HERE */
 @media screen and (max-width:648px)
 {
- .showcase-block{
+    .tablet-description>div{
+        width: 100%;
+        margin-left:0;
+    }
+ .container{
+   margin:0;
+}
+.door-description::after,
+.container::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.container>.door-description>div:nth-child(1)
+{
+    color:white;
+    width:100%;
+    padding: 0;
+    margin: 0;
+    text-align:center;
+}
+
+.container>.door-description>div>p
+{
+    font-size:1.2em;
+    font-weight: 40;
+}
+.container>.door-description>div:nth-child(1) button{
+    font-size:15px;
+    margin-top:10px;
+}
+.container>.door-description>div:nth-child(2) img
+{
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+.container>.door-description>:nth-child(2)
+{
+    width: 100%;
+}
+    .table{
+        width: 400px;
+        font-size: 0.90em;
+        overflow: scroll;
+    }
+    .showcase-block{
     height: 60vh;
     position: relative;
     background: url(../img/background.jpg);
